@@ -1,0 +1,9 @@
+ /* rule 2 */
+ .class .second-class {
+    font-size: 24px;
+  }
+/* rule 1 */
+.class.second-class {
+    font-size: 12px;
+}
+
