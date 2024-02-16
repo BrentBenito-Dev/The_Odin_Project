@@ -8,9 +8,20 @@
     color: #fff;
     background-color: #5995DA;
     padding: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .menu{
-    border: 1px solid #fff; /*to debug*/
     width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    justify-content: flex-end;
+}
+.login{
+    margin-left: 20px;
 }
