@@ -10,6 +10,7 @@
     padding: 20px 0;
     display: flex;
     justify-content: center;
+    margin-bottom:2em;
 }
 
 .menu{
@@ -24,4 +25,30 @@
 }
 .login{
     margin-left: 20px;
+}
+
+.vertical-menu-container{
+    color: #fff;
+    background-color: #5995DA;
+    padding: 20px 20px;
+    display: flex;
+    flex:1 1 auto;
+    height: 10em;
+    justify-content: center;
+}
+
+.vertical-menu{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vertical-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.vertical-login{
+    margin-top: 20px;
 }
