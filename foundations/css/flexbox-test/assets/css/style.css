@@ -9,14 +9,15 @@
     background-color: #5995DA;
     padding: 20px 0;
     display: flex;
-    justify-content: center;
     margin-bottom:2em;
 }
 
 .menu{
+    padding: 0 1em;
     width: 900px;
     display: flex;
     justify-content: space-between;
+    flex: auto;
 }
 
 .links{
@@ -34,7 +35,6 @@
     display: flex;
     flex:1 1 auto;
     height: 10em;
-    justify-content: center;
 }
 
 .vertical-menu{
