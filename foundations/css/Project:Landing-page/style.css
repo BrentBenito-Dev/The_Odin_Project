@@ -5,7 +5,7 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.conntainer{
+.container{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,8 @@ body{
     color: #E5E7EB;
     align-items: center;
     justify-content: center;
-    flex: auto;
+    max-height: 5em;
+    padding: 0em 10em;
 }
 
 .logo{
@@ -37,6 +38,8 @@ body{
 
 .hero{
     background:#1f2937;
+    padding: 10em;
+
 }
 
 .hero-main-text{
@@ -58,4 +61,52 @@ body{
     padding: 1em;
     text-decoration: none;
     border-radius: .6em;
+}
+
+/*information*/
+.info-header{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+.quote{
+    background-color: #E5E7EB;
+}
+
+.quote-text{
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+.info-images{
+    display: flex;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-placeholder{
+    border-style: solid;
+    border-color: #3882f6;
+    width: 5em;
+    height: 5em;
+}
+
+/*call to action*/
+.call-to-action{
+    background: #3882f6;
+    color: #E5E7EB;
+}
+.btn-cta-signup{
+    background: transparent;
+    border-color: #E5E7EB;
+    border-radius: .6em;
+}
+
+/*footer*/
+.footer{
+    background-color: #1f2937;
+    color: #E5E7EB;
 }
