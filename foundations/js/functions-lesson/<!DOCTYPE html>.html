@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="{{ shop.url }}">Overture Solutions</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            {% for link in linklists.main-menu.links %}
+              <li class="nav-item">
+                <a class="nav-link" href="{{ link.url }}">{{ link.title }}</a>
+              </li>
+            {% endfor %}
+            {% if customer %}
+              <li class="nav-item">
+                <a class="nav-link" href="/account">My Account</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/logout">Logout</a>
+              </li>
+            {% else %}
+              <li class="nav-item">
+                <a class="nav-link" href="/account">Login</a>
+              </li>
+            {% endif %}
+            <li class="nav-item">
+              <a class="nav-link" href="/cart">Cart</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+</body>
+</html>
